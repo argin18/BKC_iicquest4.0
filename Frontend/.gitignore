@@ -1,0 +1,114 @@
+# Dependencies
+node_modules/
+
+<<<<<<< HEAD
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+=======
+# Next.js build output
+.next/
+out/
+
+# Production builds
+build/
+dist/
+>>>>>>> 99557d3a89d77b50a24a9a8b950c5bcb622072b2
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+<<<<<<< HEAD
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.next/cache/
+
+# Coverage
+coverage/
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS Files
+=======
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Cache
+.cache/
+.eslintcache
+.parcel-cache/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+>>>>>>> 99557d3a89d77b50a24a9a8b950c5bcb622072b2
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+<<<<<<< HEAD
+*.tmp
+
+# TypeScript
+*.tsbuildinfo
+
+# Package manager lock files (optional)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+=======
+>>>>>>> 99557d3a89d77b50a24a9a8b950c5bcb622072b2
+
+# Vercel
+.vercel/
+
+<<<<<<< HEAD
+# Netlify
+.netlify/
+
+# Misc
+*.swp
+*.swo
+=======
+# Turborepo
+.turbo/
+
+# pnpm store
+.pnpm-store/
+>>>>>>> 99557d3a89d77b50a24a9a8b950c5bcb622072b2
