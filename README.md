@@ -5,7 +5,7 @@
 
 *Because your electricity bill shouldn't be a surprise.*
 
-**AI-powered energy intelligence for Nepal's institutions — real-time visibility, Gemini-driven insights, and actionable cost savings, all from a browser.**
+**AI-powered energy intelligence for Nepal's institutions - real-time visibility, Gemini-driven insights, and actionable cost savings, all from a browser.**
 
 [![Frontend](https://img.shields.io/badge/Frontend-Live%20on%20Vercel-black?style=flat-square&logo=vercel)](https://iiros.vercel.app)
 [![Backend](https://img.shields.io/badge/API-Live%20on%20Render-46E3B7?style=flat-square&logo=render)](https://iiros-api.onrender.com/api/docs)
@@ -70,11 +70,11 @@ The problem isn't that facility managers don't care. It's that nobody has given 
 
 | Pain Point | What It Actually Costs |
 |---|---|
-| No real-time device monitoring | Equipment runs at full load even when idle — wasted cost, 24 hours a day |
+| No real-time device monitoring | Equipment runs at full load even when idle - wasted cost, 24 hours a day |
 | Peak-hour charges go undetected | Organizations unknowingly pay 2–3× standard NEA tariff rates during peak windows |
 | Manual audits are the only option | Each audit costs NPR 50,000–200,000, takes weeks, and produces a PDF nobody acts on |
-| Zero CO₂ visibility | Sustainability and ESG reporting becomes impossible — a growing compliance risk |
-| Fragmented data everywhere | Energy figures, cost records, and device logs live in separate spreadsheets — never connected, never actionable |
+| Zero CO₂ visibility | Sustainability and ESG reporting becomes impossible - a growing compliance risk |
+| Fragmented data everywhere | Energy figures, cost records, and device logs live in separate spreadsheets - never connected, never actionable |
 
 The result is a quiet crisis: **facility managers operate completely blind while costs climb every billing cycle.**
 
@@ -88,9 +88,9 @@ Institutional buildings in Nepal lack affordable, real-time energy monitoring to
 
 ### Solution Statement
 
-IIROS is a web-based, AI-powered energy management platform that ingests device-level energy consumption data, runs a deterministic analytics engine to classify inefficiencies and detect anomalies, and uses Google Gemini AI to translate those findings into plain-language recommendations and executive-ready reports — all delivered in a single-pane-of-glass dashboard with every number expressed in NPR.
+IIROS is a web-based, AI-powered energy management platform that ingests device-level energy consumption data, runs a deterministic analytics engine to classify inefficiencies and detect anomalies, and uses Google Gemini AI to translate those findings into plain-language recommendations and executive-ready reports - all delivered in a single-pane-of-glass dashboard with every number expressed in NPR.
 
-No specialized hardware is required to start. The architecture is designed from day one for IoT integration — adding real sensors is a 2-week sprint, not a redesign.
+No specialized hardware is required to start. The architecture is designed from day one for IoT integration - adding real sensors is a 2-week sprint, not a redesign.
 
 ### The 90-Second Journey
 
@@ -99,59 +99,61 @@ Here's what a facility manager actually experiences:
 1. **Open the dashboard** → see four KPI cards summarizing the entire building's energy health at a glance
 2. **Spot the anomaly spike on June 3rd** in the 30-day trend chart
 3. **Click into the device breakdown** → identify "Server Room AC Unit" running at 24% efficiency
-4. **Hit "Generate Recommendations"** → Gemini returns: *"Adjust AC setpoint to 24°C during off-peak hours — estimated saving NPR 12,400/month"*
+4. **Hit "Generate Recommendations"** → Gemini returns: *"Adjust AC setpoint to 24°C during off-peak hours - estimated saving NPR 12,400/month"*
 5. **Click "Generate Executive Report"** → share with management → decision made
 
 Total time from login to actionable insight: **under 90 seconds.**
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
 | Resource | Link |
 |---|---|
 | **Frontend Dashboard** | [https://iiros.vercel.app](https://iiros.vercel.app) |
 | **Backend API Docs** | [https://iiros-api.onrender.com/api/docs](https://iiros-api.onrender.com/api/docs) |
 
-> No login required. Single-organization demo mode — open and explore freely.
+
 
 ### Screenshots
 
 | Dashboard Overview | AI Recommendations | Executive Report |
 |---|---|---|
-| *(add screenshot)* | *(add screenshot)* | *(add screenshot)* |
+| *(img1)* | *(image)* | *(image)* |
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### Core MVP — Delivered
+### Core MVP - Delivered
 
 **Live Summary Dashboard** gives facility managers an at-a-glance health check: total kWh consumed, estimated cost in NPR, the current peak usage hour, and a composite efficiency score from 0 to 100. Everything a manager needs in the first five seconds of opening the app.
 
-**30-Day Energy Trend Chart** renders an area chart with hourly granularity. Anomaly days are visually distinguished from normal days. Period selection lets users toggle between 7, 14, and 30-day views — useful for quick checks and deeper analysis alike.
+**30-Day Energy Trend Chart** renders an area chart with hourly granularity. Anomaly days are visually distinguished from normal days. Period selection lets users toggle between 7, 14, and 30-day views - useful for quick checks and deeper analysis alike.
 
 **Device Breakdown Table** shows per-device kWh totals, cost estimates, efficiency percentages, and a color-coded status badge (Efficient / Underloaded / Overload Risk / Idle Waste). This is where the story moves from *"something is wrong"* to *"this specific device is the problem."*
 
-**Gemini AI Recommendations** — on demand, the system assembles a full analytics context and sends it to Gemini 1.5 Flash. Back comes a prioritized list of 5–8 actionable recommendations, each with a title, description, priority level, and an estimated monthly NPR saving.
+**Gemini AI Recommendations** - on demand, the system assembles a full analytics context and sends it to Gemini 1.5 Flash. Back comes a prioritized list of 5–8 actionable recommendations, each with a title, description, priority level, and an estimated monthly NPR saving.
 
-**NEA Cost Estimation Engine** uses Nepal Electricity Authority's commercial tariff of NPR 18/unit. Every figure on the dashboard is in local currency — not generic USD stats disconnected from Nepali economic reality.
+**NEA Cost Estimation Engine** uses Nepal Electricity Authority's commercial tariff of NPR 18/unit. Every figure on the dashboard is in local currency - not generic USD stats disconnected from Nepali economic reality.
 
 **CO₂ & Sustainability Metrics** calculate carbon impact using the NEA grid emission factor of 0.43 kg CO₂/kWh (NEA Annual Report 2023), translated into tree equivalents and kilometers driven for intuitive understanding.
 
-### Advanced Features — Also Delivered
+**Electricity Bill Calculator** Calculate Your Electricity Bill by yourself just entering your meter unit. It gave you Exact Nrs Bill Price acording to NEA Bill Tarrif.
 
-- **AI Executive Report Generator** — one click produces a structured narrative report with executive summary, key findings, cost analysis, sustainability section, and a prioritized action plan with timelines
-- **Peak Hour Heatmap** — a 24-bar chart with peak windows highlighted and surge cost factors applied visually
-- **Date Range Filter** — interactive period selector across all charts (7d / 14d / 30d)
-- **Anomaly Detection Alerts** — statistical z-score flagging surfaces abnormal consumption days without requiring any ML model
-- **Loading Skeletons & Error States** — every async operation has a skeleton loader and graceful fallback; no blank screens, no unexplained failures
+### Advanced Features - Also Delivered
+
+- **AI Executive Report Generator** - one click produces a structured narrative report with executive summary, key findings, cost analysis, sustainability section, and a prioritized action plan with timelines
+- **Peak Hour Heatmap** - a 24-bar chart with peak windows highlighted and surge cost factors applied visually
+- **Date Range Filter** - interactive period selector across all charts (7d / 14d / 30d)
+- **Anomaly Detection Alerts** - statistical z-score flagging surfaces abnormal consumption days without requiring any ML model
+- **Loading Skeletons & Error States** - every async operation has a skeleton loader and graceful fallback; no blank screens, no unexplained failures
 
 ---
 
-## 📋 Functional Requirements
+##  Functional Requirements
 
-These define what IIROS must do — the observable, testable behaviors the system delivers to its users.
+These define what IIROS must do - the observable, testable behaviors the system delivers to its users.
 
 ### FR-01 · Energy Data Ingestion
 
@@ -159,7 +161,7 @@ The system must accept energy readings per device containing `device_id`, `times
 
 ### FR-02 · Real-Time Summary Dashboard
 
-The dashboard must display four KPI values on every load: total kWh consumed, total estimated cost in NPR, the current peak usage hour (0–23), and a composite efficiency score from 0 to 100. All values must be fetched live from the `/analytics/summary` endpoint. The dashboard must render without errors even when the database contains no readings — graceful empty states, not blank screens.
+The dashboard must display four KPI values on every load: total kWh consumed, total estimated cost in NPR, the current peak usage hour (0–23), and a composite efficiency score from 0 to 100. All values must be fetched live from the `/analytics/summary` endpoint. The dashboard must render without errors even when the database contains no readings - graceful empty states, not blank screens.
 
 ### FR-03 · Energy Trend Visualization
 
@@ -167,7 +169,7 @@ The system must provide hourly time-series data aggregated for selectable period
 
 ### FR-04 · Device Management
 
-The system must maintain a device registry with name, type, location, rated power in kW, and active status. It must calculate and return per-device consumption totals, average power draw, efficiency percentage, and status classification. Device status must be derived in real time from consumption patterns — not set manually.
+The system must maintain a device registry with name, type, location, rated power in kW, and active status. It must calculate and return per-device consumption totals, average power draw, efficiency percentage, and status classification. Device status must be derived in real time from consumption patterns - not set manually.
 
 ### FR-05 · Business Logic Analytics
 
@@ -187,37 +189,37 @@ The system must return average hourly consumption data for all 24 hours. Each ho
 
 ### FR-09 · Error Handling & Fallbacks
 
-Every API endpoint must return errors using a consistent JSON envelope: `{ error, code, message, status }`. The AI service must never propagate a Gemini API failure to the frontend — a rule-based fallback using computed analytics figures must always be available. The frontend must display informative error messages and skeleton loaders for all async operations.
+Every API endpoint must return errors using a consistent JSON envelope: `{ error, code, message, status }`. The AI service must never propagate a Gemini API failure to the frontend - a rule-based fallback using computed analytics figures must always be available. The frontend must display informative error messages and skeleton loaders for all async operations.
 
 ---
 
-## 🔒 Non-Functional Requirements
+##  Non-Functional Requirements
 
-These define *how well* IIROS performs — the quality attributes that determine whether it's genuinely production-worthy and not just a demo that falls apart under scrutiny.
+These define *how well* IIROS performs - the quality attributes that determine whether it's genuinely production-worthy and not just a demo that falls apart under scrutiny.
 
 ### NFR-01 · Performance
 
-The `/analytics/summary` endpoint must respond within **1,500ms** under normal load, including all aggregation calculations across 7,200+ readings. The frontend dashboard must achieve a Lighthouse Performance score of **≥ 75** on desktop. The 30-day trend chart must render 720 data points (30 days × 24 hours) without visible lag. Gemini API calls must be non-blocking — the rest of the dashboard must remain fully interactive while an AI request is pending.
+The `/analytics/summary` endpoint must respond within **1,500ms** under normal load, including all aggregation calculations across 7,200+ readings. The frontend dashboard must achieve a Lighthouse Performance score of **≥ 75** on desktop. The 30-day trend chart must render 720 data points (30 days × 24 hours) without visible lag. Gemini API calls must be non-blocking - the rest of the dashboard must remain fully interactive while an AI request is pending.
 
 ### NFR-02 · Reliability & Availability
 
-The backend must return a valid HTTP response for every request — no unhandled exceptions that result in a 500 with an empty body. If Gemini is unavailable, the recommendations endpoint must fall back to rule-based output within 3 seconds. The system must handle a completely empty database without crashing any endpoint.
+The backend must return a valid HTTP response for every request - no unhandled exceptions that result in a 500 with an empty body. If Gemini is unavailable, the recommendations endpoint must fall back to rule-based output within 3 seconds. The system must handle a completely empty database without crashing any endpoint.
 
 ### NFR-03 · Scalability
 
-The `energy_readings` table must carry composite indexes on `(device_id, timestamp DESC)` and `(timestamp DESC)` to support sub-second queries even at 1 million+ rows. The analytics engine must be stateless — it accepts a list of readings as input and returns computed values, making it trivially horizontally scalable. The backend must be deployable as a single stateless process suitable for Render's auto-scaling.
+The `energy_readings` table must carry composite indexes on `(device_id, timestamp DESC)` and `(timestamp DESC)` to support sub-second queries even at 1 million+ rows. The analytics engine must be stateless - it accepts a list of readings as input and returns computed values, making it trivially horizontally scalable. The backend must be deployable as a single stateless process suitable for Render's auto-scaling.
 
 ### NFR-04 · Security
 
-`GEMINI_API_KEY` and `DATABASE_URL` must never be committed to version control — enforced via `.gitignore` and an `.env.example` template. CORS must be restricted to explicitly whitelisted origins; wildcard `*` is unacceptable in production. All data in transit is served over HTTPS, enforced by Vercel and Render by default. The Neon PostgreSQL instance must use SSL for all connections.
+`GEMINI_API_KEY` and `DATABASE_URL` must never be committed to version control - enforced via `.gitignore` and an `.env.example` template. CORS must be restricted to explicitly whitelisted origins; wildcard `*` is unacceptable in production. All data in transit is served over HTTPS, enforced by Vercel and Render by default. The Neon PostgreSQL instance must use SSL for all connections.
 
 ### NFR-05 · Maintainability
 
-Business logic must live entirely in `analytics.py` with zero database calls, enabling unit testing without a live connection. The codebase must follow strict layer separation: models → schemas → crud → analytics → routers, with no cross-layer business logic bleeding. All API response shapes must be Pydantic schemas — no untyped `dict` returns from any endpoint. Frontend API calls must be centralized in `lib/api.ts` with TypeScript interfaces matching backend schemas exactly.
+Business logic must live entirely in `analytics.py` with zero database calls, enabling unit testing without a live connection. The codebase must follow strict layer separation: models → schemas → crud → analytics → routers, with no cross-layer business logic bleeding. All API response shapes must be Pydantic schemas - no untyped `dict` returns from any endpoint. Frontend API calls must be centralized in `lib/api.ts` with TypeScript interfaces matching backend schemas exactly.
 
 ### NFR-06 · Usability
 
-The dashboard must be fully functional on screen widths ≥ 1024px. All charts must show tooltips with exact values on hover. The UI must provide visual feedback within 200ms of any user interaction. Empty states must communicate an actionable next step — never a blank white screen.
+The dashboard must be fully functional on screen widths ≥ 1024px. All charts must show tooltips with exact values on hover. The UI must provide visual feedback within 200ms of any user interaction. Empty states must communicate an actionable next step - never a blank white screen.
 
 ### NFR-07 · Observability
 
@@ -225,9 +227,9 @@ All Gemini API errors must be logged to the server console with full error conte
 
 ---
 
-## 🗂️ Features & Functions
+##  Features & Functions
 
-A precise mapping of every user-facing feature to the underlying function powering it — so nothing in IIROS is a black box.
+A precise mapping of every user-facing feature to the underlying function powering it - so nothing in IIROS is a black box.
 
 ### Dashboard Module
 
@@ -289,9 +291,9 @@ A precise mapping of every user-facing feature to the underlying function poweri
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
-IIROS follows a clean 3-tier architecture with an AI layer inserted between the analytics engine and the presentation layer. The separation is intentional — business logic never bleeds into the API layer, and the AI layer never touches the database directly.
+IIROS follows a clean 3-tier architecture with an AI layer inserted between the analytics engine and the presentation layer. The separation is intentional - business logic never bleeds into the API layer, and the AI layer never touches the database directly.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -318,7 +320,7 @@ IIROS follows a clean 3-tier architecture with an AI layer inserted between the 
 
 ### Future IoT Architecture
 
-When real hardware is connected, the pipeline simply extends upstream — everything from the database forward is completely unchanged. That's deliberate.
+When real hardware is connected, the pipeline simply extends upstream - everything from the database forward is completely unchanged. That's deliberate.
 
 ```
 ESP32 + CT Clamp  →  MQTT Topic: iiros/{device_id}/reading
@@ -331,7 +333,7 @@ The `energy_readings` table already carries `voltage`, `current_amps`, and `powe
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 
@@ -339,7 +341,7 @@ The `energy_readings` table already carries `voltage`, `current_amps`, and `powe
 |---|---|---|
 | Web Framework | FastAPI + Uvicorn | Async-native, auto-generates `/docs`, fastest Python API framework |
 | ORM | SQLAlchemy + Alembic | Battle-tested ORM with proper migration support via Alembic |
-| Validation | Pydantic v2 | Enforces request/response shapes at the boundary — no untyped dicts |
+| Validation | Pydantic v2 | Enforces request/response shapes at the boundary - no untyped dicts |
 | Database | PostgreSQL via Neon | Serverless Postgres with generous free tier; production-grade from day one |
 | AI | Google Gemini 1.5 Flash | Fastest Gemini model, JSON output mode, ideal for structured recommendations |
 | Language | Python 3.11 | Ecosystem fit for data work, full async support, type hints throughout |
@@ -349,7 +351,7 @@ The `energy_readings` table already carries `voltage`, `current_amps`, and `powe
 | Layer | Technology | Why This Choice |
 |---|---|---|
 | Framework | Next.js 14 (App Router) | SSR-ready, file-based routing, production Vercel deployment in one command |
-| Language | TypeScript | End-to-end type safety — interfaces match Pydantic schemas exactly |
+| Language | TypeScript | End-to-end type safety - interfaces match Pydantic schemas exactly |
 | Styling | Tailwind CSS + Shadcn/ui | Utility-first CSS with accessible, unstyled base components |
 | Charts | Recharts | Composable React chart library with excellent TypeScript support |
 | Icons | Lucide React | Consistent, clean icon set designed for React |
@@ -366,7 +368,7 @@ The `energy_readings` table already carries `voltage`, `current_amps`, and `powe
 
 ## ⚙️ Business Logic
 
-All calculation rules live exclusively in `analytics.py`. Pure Python functions, zero database calls, testable in isolation without a live connection. This isn't an accident — it's the architecture choice that makes the system reliable, auditable, and easy to extend.
+All calculation rules live exclusively in `analytics.py`. Pure Python functions, zero database calls, testable in isolation without a live connection. This isn't an accident - it's the architecture choice that makes the system reliable, auditable, and easy to extend.
 
 ### Cost Calculation
 
@@ -379,7 +381,7 @@ monthly_estimate = daily_avg_kwh × 30 × 18.0
 
 ### Peak Hour Detection
 
-Business hours from 09:00 to 17:00 are flagged as the peak window. Any day where total cost exceeds 1.5× the 7-day rolling average triggers a spike alert. Readings recorded within peak hours carry a 1.3× surge cost multiplier — reflecting the real-world premium for peak consumption.
+Business hours from 09:00 to 17:00 are flagged as the peak window. Any day where total cost exceeds 1.5× the 7-day rolling average triggers a spike alert. Readings recorded within peak hours carry a 1.3× surge cost multiplier - reflecting the real-world premium for peak consumption.
 
 ### Device Efficiency Classification
 
@@ -427,15 +429,15 @@ is_anomaly = daily_kwh > (mean_30d + 2.5 × std_30d)
 
 ---
 
-## 🤖 AI Integration
+##  AI Integration
 
-IIROS uses **Google Gemini 1.5 Flash** for three distinct capabilities — and each one is designed so that a Gemini failure degrades gracefully rather than breaking the system.
+IIROS uses **Google Gemini 1.5 Flash** for three distinct capabilities - and each one is designed so that a Gemini failure degrades gracefully rather than breaking the system.
 
 ### Recommendations
 
 When a user clicks "Generate Recommendations," the system assembles a full analytics context object: total kWh, per-device efficiency breakdowns, anomaly days, NPR cost figures, and the current efficiency score. This context goes to Gemini, which returns a JSON array of 5–8 prioritized recommendations. Each carries a title, description, category, priority, and an estimated monthly NPR saving.
 
-> **Important design principle:** The NPR figures come from `analytics.py` — Gemini writes the narrative around verified numbers, not the reverse. Gemini is a language layer, not a calculation layer.
+> **Important design principle:** The NPR figures come from `analytics.py` - Gemini writes the narrative around verified numbers, not the reverse. Gemini is a language layer, not a calculation layer.
 
 ### Executive Reports
 
@@ -443,13 +445,13 @@ A single endpoint call triggers Gemini to generate a complete structured report:
 
 ### Error Handling
 
-Every Gemini call sits inside a `try/except` block. If the response isn't valid JSON, the system retries once with an explicit `Return ONLY valid JSON` instruction appended. If the second attempt also fails, `analytics.py` generates rule-based fallback recommendations using real computed NPR figures. No Gemini error ever surfaces to the frontend — the API always returns a valid, shaped response.
+Every Gemini call sits inside a `try/except` block. If the response isn't valid JSON, the system retries once with an explicit `Return ONLY valid JSON` instruction appended. If the second attempt also fails, `analytics.py` generates rule-based fallback recommendations using real computed NPR figures. No Gemini error ever surfaces to the frontend - the API always returns a valid, shaped response.
 
 > Gemini never queries the database, never makes device control decisions, and holds no state between calls. It is purely a language layer that receives validated numbers and returns human-readable narrative.
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -464,7 +466,7 @@ Before you begin, make sure you have:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_TEAM/teamname_iicquest.git
+git clone https://github.com/argin18/BKC_iicquest4.0.git
 cd teamname_iicquest/backend
 
 # Create and activate a virtual environment
@@ -477,7 +479,7 @@ pip install -r requirements.txt
 
 # Set up environment variables
 cp .env.example .env
-# Edit .env — fill in DATABASE_URL, GEMINI_API_KEY, CORS_ORIGINS
+# Edit .env - fill in DATABASE_URL, GEMINI_API_KEY, CORS_ORIGINS
 
 # Run database migrations
 alembic upgrade head
@@ -514,7 +516,7 @@ Dashboard available at [http://localhost:3000](http://localhost:3000).
 | Variable | Service | Description |
 |---|---|---|
 | `DATABASE_URL` | Backend | PostgreSQL connection string from Neon |
-| `GEMINI_API_KEY` | Backend | Google AI Studio key — **never commit this to Git** |
+| `GEMINI_API_KEY` | Backend | Google AI Studio key - **never commit this to Git** |
 | `CORS_ORIGINS` | Backend | Comma-separated list of allowed origins |
 | `NEXT_PUBLIC_API_URL` | Frontend | Backend API base URL |
 
@@ -537,27 +539,67 @@ All responses are `Content-Type: application/json`. Every error follows the same
 
 ### Endpoints
 
+**Devices - `/api/v1/devices`**
+ 
 | Method | Route | Description |
 |---|---|---|
-| `GET` | `/analytics/summary` | Dashboard KPIs: total kWh, cost NPR, peak hour, efficiency score, CO₂ kg |
-| `GET` | `/analytics/trends?period=7d` | Hourly time-series data for the trend chart (7d / 14d / 30d) |
-| `GET` | `/analytics/devices` | Per-device breakdown: kWh, cost NPR, efficiency %, status badge |
-| `GET` | `/analytics/peak-hours` | 24-hour heatmap data with `is_peak` flag and surge cost per hour |
-| `GET` | `/devices` | All active devices with their latest reading snapshot |
-| `GET` | `/devices/{id}` | Single device detail with 24-hour reading history |
-| `POST` | `/readings/bulk` | Bulk ingest historical readings (used by seed.py and imports) |
-| `POST` | `/recommendations/generate` | Trigger Gemini to generate and store new recommendations |
-| `GET` | `/recommendations` | Fetch cached recommendations (filterable by type and priority) |
-| `POST` | `/reports/executive` | Generate a full AI executive report and store to database |
-| `GET` | `/reports` | List all previously generated reports with metadata |
-
+| `GET` | `/devices` | Retrieve the full list of all registered devices |
+| `GET` | `/devices/{id}` | Retrieve details and latest reading for a specific device |
+| `POST` | `/devices` | Register a new device - payload: `{ name, type, room_id, status }` |
+| `PATCH` | `/devices/{id}` | Update device properties (name, type, location, status) |
+| `DELETE` | `/devices/{id}` | Remove a device from the system permanently |
+ 
+**Energy Readings - `/api/v1/readings`**
+ 
+| Method | Route | Description |
+|---|---|---|
+| `GET` | `/readings/latest` | Most recent aggregated readings across all active devices |
+| `GET` | `/readings/history` | Historical readings with `?start`, `?end`, `?device_id` query params |
+ 
+**Analytics - `/api/v1/analytics`**
+ 
+| Method | Route | Description |
+|---|---|---|
+| `GET` | `/analytics/summary` | High-level KPIs: `total_consumption`, `active_devices`, `estimated_cost`, `carbon_footprint` |
+| `GET` | `/analytics/trends` | Daily energy trends - baseline vs. actual vs. optimized over time |
+| `GET` | `/analytics/top-consumers` | Consumption breakdown ranked by device type |
+| `GET` | `/analytics/peak-hours` | Average and actual consumption for each of the 24 hours of the day |
+ 
+**AI Analysis - `/api/v1/analytics/ai`**
+ 
+| Method | Route | Description |
+|---|---|---|
+| `GET` | `/analytics/ai/summary` | Quick AI narrative summary of current energy performance |
+| `GET` | `/analytics/ai/deep-analysis` | Comprehensive AI insights: `overall_performance`, `key_findings`, `efficiency_opportunities`, `summary_metrics` |
+ 
+**Recommendations - `/api/v1/recommendations`**
+ 
+| Method | Route | Description |
+|---|---|---|
+| `GET` | `/recommendations` | List all active recommendations (filterable by `category`, `impact`, `status`) |
+| `POST` | `/recommendations/generate` | Trigger Gemini to analyze recent data and generate new recommendations, stored to DB |
+ 
+**Reports - `/api/v1/reports`**
+ 
+| Method | Route | Description |
+|---|---|---|
+| `GET` | `/reports` | List all previously generated executive reports with metadata |
+| `GET` | `/reports/{id}` | Retrieve the full content of a specific report |
+| `POST` | `/reports/generate` | Generate a new AI executive impact report and store to database |
+ 
+**Real-Time - WebSocket**
+ 
+| Type | Route | Description |
+|---|---|---|
+| `WS` | `/ws/energy` | Live energy updates pushed to the dashboard - message format: `{ type: "energy_update", data: { total_consumption, active_devices } }` |
+ 
 Full interactive documentation at `/docs` (Swagger UI) and `/redoc`.
-
+ 
 ---
 
 ## ☁️ Deployment
 
-### Backend — Render
+### Backend - Render
 
 1. Push your code to GitHub
 2. Go to [render.com](https://render.com) → **New Web Service** → connect your repository
@@ -572,7 +614,7 @@ alembic upgrade head
 python seed.py
 ```
 
-### Frontend — Vercel
+### Frontend - Vercel
 
 ```bash
 cd frontend
@@ -585,15 +627,15 @@ Or connect your GitHub repository in the Vercel dashboard for fully automatic de
 NEXT_PUBLIC_API_URL = https://iiros-api.onrender.com/api
 ```
 
-### Database — Neon PostgreSQL
+### Database - Neon PostgreSQL
 
 1. Create a free project at [neon.tech](https://neon.tech)
 2. Copy the connection string into `DATABASE_URL` in both your local `.env` and the Render dashboard
-3. Neon manages serverless scaling automatically — no further configuration required
+3. Neon manages serverless scaling automatically - no further configuration required
 
 ---
 
-## 📈 Startup Roadmap
+##  Startup Roadmap
 
 IIROS was built as a product, not a prototype. The path to revenue is clear and the architecture supports every step.
 
@@ -620,16 +662,16 @@ Scale to 25–50 customers. Train an ML anomaly detection model on 6+ months of 
 
 ---
 
-## 🔍 AI Tools Disclosure
+##  AI Tools Disclosure
 
 In the spirit of full transparency, the following AI tools were used during the development of IIROS:
 
 | Tool | How It Was Used |
 |---|---|
-| **Google Gemini 1.5 Flash** | Core product feature — runs at runtime inside the application to generate energy recommendations and executive reports for end users |
+| **Google Gemini 1.5 Flash** | Core product feature - runs at runtime inside the application to generate energy recommendations and executive reports for end users |
 | **Claude (Anthropic)** | Used during development for system architecture planning, database schema design, prompt engineering, and code structure assistance |
 | **GitHub Copilot** | Used for code completion during frontend component development and backend endpoint implementation |
 
-**One important boundary worth being explicit about:** all business logic calculations — cost estimation, efficiency scoring, CO₂ computation, anomaly detection — are deterministic Python code written by the development team in `analytics.py`. Gemini receives only pre-validated numbers and generates natural language narrative around them. It computes nothing independently.
+**One important boundary worth being explicit about:** all business logic calculations - cost estimation, efficiency scoring, CO₂ computation, anomaly detection - are deterministic Python code written by the development team in `analytics.py`. Gemini receives only pre-validated numbers and generates natural language narrative around them. It computes nothing independently.
 
 ---
