@@ -38,10 +38,6 @@ export interface Recommendation {
   priority_score: number;
   status: "pending" | "implemented" | "dismissed";
   ai_confidence?: number;
-  metadata_json?: {
-    roi_percentage?: number;
-    [key: string]: any;
-  };
 }
 
 export interface AnalyticsTrend {
