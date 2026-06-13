@@ -119,7 +119,7 @@ Total time from login to actionable insight: **under 90 seconds.**
 
 | Dashboard Overview | AI Recommendations | Executive Report |
 |---|---|---|
-| *(img1)* | *(image)* | *(image)* |
+| ![dashboard](./assets/dashboard1.png),![Dashboard2](./assets/dashboard2.png) | ![Ai Recommend](./assets/aiInsights.png), ![Ai Recommend](./assets/aiInsights.png) | ![report](./assets/impactReports.png), ![report](./assets/impactReports.png) |
 
 ---
 
