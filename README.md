@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
 #  IIROS
@@ -675,3 +676,5 @@ In the spirit of full transparency, the following AI tools were used during the 
 **One important boundary worth being explicit about:** all business logic calculations - cost estimation, efficiency scoring, CO₂ computation, anomaly detection - are deterministic Python code written by the development team in `analytics.py`. Gemini receives only pre-validated numbers and generates natural language narrative around them. It computes nothing independently.
 
 ---
+=======
+>>>>>>> 224dcd59c0146f0fc05c8e79c1b5515e6f7d06d5
