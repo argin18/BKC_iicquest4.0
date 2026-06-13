@@ -58,7 +58,7 @@ IIROS changes that. Open the dashboard - in under 90 seconds you see exactly whi
 | *Mahadev Rajbanshi* | Designer | Figma Design System, Business Model Canvas, UI Polish |
 | *Hira Prasad Niroula* | Backend Lead | FastAPI, PostgreSQL, Analytics Engine, Gemini Integration, Pitch Deck|
 | *Ravi  Shah* | Frontend Lead | Next.js Dashboard, Recharts, Shadcn/ui,Presenter, Judge Q&A Preparation, Live Demo |
-| *Sumit Bhujel* | Full-Stack Intregator | Problem Narrative, Frontend and Backend Intrigrate, Render & Vercel Deployment, Testing |
+| *Sumit Bhujel* | Integration & Deployment Lead | Problem Narrative, Frontend and Backend Intrigrate, Render & Vercel Deployment, Testing |
 
 ---
 
